@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         val loadButtonImage = findViewById<Button>(R.id.button)
         loadButtonImage.setOnClickListener {
-            startActivity(Intent(this, Activity1::class.java))
+            startActivity(Intent(this, Activity2::class.java))
         }
         val loadButtonImage1 = findViewById<Button>(R.id.button1)
         loadButtonImage.setOnClickListener {
-            startActivity(Intent(this, Activity2::class.java))
+            startActivity(Intent(this, Activity1::class.java))
         }
     }
 }
