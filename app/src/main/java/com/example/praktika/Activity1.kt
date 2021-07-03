@@ -21,10 +21,10 @@ class Activity1 : AppCompatActivity() {
             val name = findViewById<TextView>(R.id.name).text
             val type = findViewById<TextView>(R.id.type).text
             val description = findViewById<TextView>(R.id.description).text
-            val date = findViewById<TextView>(R.id.date)
+            val date = findViewById<TextView>(R.id.date).text
             db.execSQL("CREATE TABLE IF NOT EXISTS car (name TEXT, type TEXT, description TEXT, date INTEGER)")
             db.execSQL("INSERT INTO Car VALUES ($name, $type, $description, $date);")
-            finish()
+            db.close()
         }
     }
 }
